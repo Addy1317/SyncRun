@@ -15,6 +15,7 @@ namespace SyncRun.Service
     {
         [Header("Service")]
         [SerializeField] internal GameManager gameManager;
+        [SerializeField] internal DataSyncManager dataSyncManager;
         [SerializeField] internal AudioManager audioManager;
         [SerializeField] internal CurrencyManager currencyManager;
         [SerializeField] internal SpawnManager enemySpawnManager;
@@ -42,6 +43,7 @@ namespace SyncRun.Service
             var services = new Dictionary<string, Object>
             {
             { "GameManager", gameManager },
+            {"DataSyncManager", dataSyncManager },
             { "AudioManager", audioManager },
             { "CurrencyManager", currencyManager },
             { "EnemySpawnManager", enemySpawnManager },
